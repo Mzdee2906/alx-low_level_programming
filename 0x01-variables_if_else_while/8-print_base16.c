@@ -3,22 +3,24 @@
 /**
  * main - Determines if a number is positive, negative or zero.
  *
+ * Description: print the letters of thr alphabet except e, q
+ *
  * Return: Always 0
  */
 
 int main(void)
 {
-	char a = '0';
-	char 1 = 'a';
+	int i = 0;
 
-	for (a = '0'; a <= '9'; a++)
+	while (i < 48)
 	{
-		putchar(a);
+		if (i < 10)
+			putchar(i + '0');
+		else if (i > 41)
+			putchar(i - 10 + 'A');
+		i++;
 	}
-	for (1 = 'a'; 1 <= 'f'; 1++)
-	{
-		putchar(1);
-	}
-	putchar('\n');
+	putchar(10);
+
 	return (0);
 }
