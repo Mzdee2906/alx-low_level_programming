@@ -3,29 +3,29 @@
 /**
  * main - Determines if a number is positive, negative or zero
  *
+ * Description: print single digit in numbers with commas
+ *
  * Return: Always 0
  */
 
 int main(void)
 {
-	int a = '0';
+	int i;
 
+	i = 48;
 
-
-	while (a <= '9';)
+	while (1 < 58)
 	{
-		putchar(a);
-		if (a == '9')
+		putchar(i);
+		if (i != 57)
 		{
-			putchar('\n');
-			return (0);
+			putchar(44);
+			return (32);
 		}
-		else
-		{
-			putchar(',');
-			putchar('');
-			a++;
-		}
+		i++;
 	}
+
+	putchar(10);
+
 	return (0);
 }
