@@ -5,20 +5,26 @@
  *
  * Return: Always 0
  */
-
 int main(void)
 {
-	char a = 'a';
-	char b = 'A';
+	int letter;
 
-	for (a = 'a'; a <= 'z'; a++)
+	/*
+	 * Print alphabet in lowercase
+	 */
+	letter = 'a';
+	while (letter <= 'z')
 	{
-		putchar(a);
+		putchar(letter);
+		letter++;
 	}
-	for (b = 'A'; b <= 'z'; b++)
+	/* Print alphabet in uppercase */
+	letter = 'A';
+	while (letter <= 'z')
 	{
-		putchar(b);
+		putchar(letter);
+		letter++;
 	}
 	putchar('\n');
-		return (0);
+	return (0);
 }
