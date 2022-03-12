@@ -7,25 +7,19 @@
  *
  * Return: Always 0
  */
-
 int main(void)
 {
-	int i;
+	int digit;
 
-	i = 48;
-
-	while (i < 58)
+	for (digit = 48; digit < 58; digit++)
 	{
-		putchar(i);
-		if (i != 57)
+		putchar(digit);
+		if (digit != 57)
 		{
 			putchar(44);
-			return (32);
+			putchar(32);
 		}
-		i++;
 	}
-
-	putchar(10);
-
+	putchar('\n');
 	return (0);
 }
