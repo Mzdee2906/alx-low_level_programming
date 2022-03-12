@@ -3,28 +3,35 @@
 /**
  * main - Print combinations of two digit numbers
  *
+ * Description: print double digit combos
+ *
  * Return: Always 0
  */
+
 int main(void)
 {
-	int tens;
-	int ones;
+	int i, j;
 
-	for (tens = 0; tens <= 9; tens++)
+	i = 48;
+	j = 48;
+
+	while (i < 58)
 	{
-		for (ones = tens + 1; ones <= 9; ones++)
+		j = i + 1;
+		while (j < 58)
 		{
-			putchar(tens + '0');
-			putchar(ones + '0');
+			putchar(i);
+			putchar(j);
 
-			if (tens < 8)
+			if (i < 56 || j < 57)
 			{
-				putchar(',');
-				putchar('');
+				putchar(44);
+				putchar(32);
 			}
+			j++;
 		}
-	}
-	putchar('\n');
 
-	return (0);
-}
+		putchar(10);
+
+		return (0);
+	}
