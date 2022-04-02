@@ -3,22 +3,31 @@
 /**
  * main - Determines if a number is positive, negative or zero.
  *
+ * Description: print the letters of the alphabet in lower then in upper case
+ *
  * Return: Always 0
  */
 
 int main(void)
 {
-	char a = 'a';
-	char b = 'A';
+	int i, j;
 
-	for (a = 'a'; a <= 'z'; a++)
+	i = 97;
+	j = 65;
+
+	while (i < 123)
 	{
-		putchar(a);
+		putchar(i);
+		i++;
 	}
-	for (b = 'A'; b <= 'z'; b++)
+
+	while (j < 91)
 	{
-		putchar(b);
+		putchar(j);
+		j++;
 	}
-	putchar('\n')
-		return (0);
+
+	putchar(10);
+
+	return (0);
 }
